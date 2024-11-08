@@ -1,11 +1,7 @@
 # Use the official PHP image.
 # https://hub.docker.com/_/php
 FROM php:8.3-apache
-ENV PORT=8080
-ENV DB_HOST=34.154.208.192
-ENV DB_NAME=image_catalog
-ENV DB_USER=appmod-phpapp-user
-ENV DB_PASS=PippoBardo92!
+
 # Configure PHP for Cloud Run.
 # Precompile PHP code with opcache.
 RUN docker-php-ext-install pdo_mysql
